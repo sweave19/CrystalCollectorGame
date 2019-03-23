@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>  
+    <div class="header">
+        <h1>Crystals Collector!</h1>
+    </div>
+    <div class="instructions">
+        <h3>Here's how you play the game</h3>
+        <br/>
+        You will be given a random number at the start of the game.<br/><br />
+        There are four crystals below.  By clicking on the crystal you will add a specific amount of points to your total score.<br/><br />
+        You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number <br/><br />
+        The value of each crystal is hidden from you until you click on it.<br/><br />
+        Each time when the game starts, the game will change the values of each crystal.
+        <br/><br /><br />
+    </div>
+    <div class="container">
+        <div class="numberToMatch">
+            <h2>
+                Target Number:
+                <span id="targetNumber"></span>
+            </h2>
+        </div>
+        <div class="winsAndLosses">
+            <h2>
+                Wins:
+                <span id="numberWins"></span>
+                <br /><br />
+                Losses:
+                <span id="numberLosses"></span>
+            </h2>
+        </div>
+    </div>
+    <div class="gems">
+        <img src="assets/images/blue.png" class=gemImage id="one" alt="Blue Gem">
+        <img src="assets/images/green.png" class=gemImage id="two" alt="Green Gem">
+        <img src="assets/images/red.png" class=gemImage id="three" alt="Red Gem">
+        <img src="assets/images/yellow.png" class=gemImage id="four" alt="Yellow Gem">
+        <div class="userTotal">
+            <h2>
+                Your total score is:
+                <span id="totalScore"></span>
+            </h2>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
